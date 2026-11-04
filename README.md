@@ -9,6 +9,7 @@ Dashboard
 Receita Total
 Total de Pedidos
 Ticket Médio
+
 Clientes Únicos
 Receita Mensal
 Top 5 Cidades
