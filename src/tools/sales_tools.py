@@ -47,3 +47,21 @@ TOOLS = [
         }
     }
 ]
+{
+    "type": "function",
+    "function": {
+        "name": "get_revenue_by_period",
+        "description": "Retorna a receita de um período específico.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "start_date": {
+                    "type": "string"
+                },
+                "end_date": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
