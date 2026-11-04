@@ -1,1 +1,1 @@
-
+# Configurações do projeto
