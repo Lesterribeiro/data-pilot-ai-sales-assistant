@@ -74,3 +74,24 @@ def revenue_per_customer(df):
         revenue / customers,
         2
     )
+    def get_revenue_by_period(
+    df,
+    start_date,
+    end_date
+):
+    """
+    Retorna a receita dentro de um período.
+    """
+
+    df = get_completed(df)
+
+    filtered = df[
+        (df["date"] >= start_date)
+        &
+        (df["date"] <= end_date)
+    ]
+
+    return round(
+        filtered["revenue"].sum(),
+        2
+    )
