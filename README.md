@@ -1,35 +1,14 @@
 Data Pilot AI Sales Assistant
-Assistente Inteligente de Vendas construído com Python, Streamlit e OpenRouter utilizando Function Calling para responder perguntas sobre métricas de negócio de forma confiável.
+Assistente Inteligente de Vendas desenvolvido com Python, Streamlit e OpenRouter utilizando Function Calling para responder perguntas sobre indicadores de negócio.
 
 Objetivo
-O projeto demonstra a construção de uma aplicação de análise de vendas capaz de:
+O Data Pilot demonstra como combinar análise de dados e Inteligência Artificial para:
 
 Processar dados de vendas;
-Gerar indicadores de negócio;
+Calcular métricas de negócio;
 Exibir dashboards interativos;
-Responder perguntas em linguagem natural;
-Utilizar Function Calling para garantir que os cálculos sejam realizados pelo Python e não inventados pela IA.
-Arquitetura
-sales.csv
-    │
-    ▼
-Data Processor
-    │
-    ▼
-Metrics Service
-    │
-    ▼
-Function Tools
-    │
-    ▼
-OpenRouter
-    │
-    ▼
-Chat IA
-
-    ▲
-    │
-Dashboard Streamlit
+Permitir consultas em linguagem natural;
+Garantir que os cálculos sejam realizados pelo Python e não inventados pela IA.
 Funcionalidades
 Dashboard
 Receita Total
@@ -40,15 +19,15 @@ Receita Mensal
 Top 5 Cidades
 Filtro por Categoria
 Assistente Inteligente
-Permite consultas em linguagem natural como:
+Perguntas suportadas:
 
 Qual a receita total?
 Quantos pedidos foram concluídos?
 Qual o ticket médio?
 Qual a taxa de cancelamento?
 Qual a receita média por cliente?
-Qual a receita em determinado período?
-Tecnologias
+Qual a receita por período?
+Tecnologias Utilizadas
 Python
 Pandas
 Streamlit
@@ -81,7 +60,7 @@ Dataset
 O projeto utiliza um arquivo chamado:
 
 sales.csv
-A documentação esperada do dataset encontra-se em:
+Os requisitos do dataset estão documentados em:
 
 data/README_DATASET.md
 Ferramentas Disponíveis
@@ -94,17 +73,9 @@ revenue_per_customer
 get_revenue_by_period
 Melhorias Implementadas
 Receita Média por Cliente
-Nova métrica para avaliar o potencial de monetização da base de clientes.
-
 Receita por Período
-Permite consultas filtradas por intervalo de datas.
-
 Ranking de Cidades
-Visualização das cidades com maior volume de receita.
-
-Insights de Negócio
-Geração de indicadores para apoio à tomada de decisão.
-
+Estrutura preparada para Function Calling
 Configuração
 Criar um arquivo .env baseado em:
 
@@ -124,12 +95,10 @@ Exemplos:
 dashboard.png
 chat.png
 architecture.png
-Próximos Passos
-Para execução completa do projeto será necessário:
-
-Inserir o arquivo sales.csv
-Configurar a chave OpenRouter
-Instalar as dependências
-Executar a aplicação Streamlit
+Documentação Complementar
+ARCHITECTURE.md
+CHANGELOG.md
+CHECKLIST.md
+data/README_DATASET.md
 Autor
-Projeto desenvolvido para fins de estudo, prática de análise de dados e desenvolvimento de assistentes inteligentes utilizando IA Generativa.
+Projeto desenvolvido para fins de estudo e prática de análise de dados com Inteligência Artificial.
