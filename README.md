@@ -64,6 +64,8 @@ data-pilot-ai-sales-assistant/
 ├── requirements.txt
 ├── .env.example
 ├── CHECKLIST.md
+├── ARCHITECTURE.md
+├── CHANGELOG.md
 
 ├── assets/
 ├── data/
@@ -122,5 +124,12 @@ Exemplos:
 dashboard.png
 chat.png
 architecture.png
+Próximos Passos
+Para execução completa do projeto será necessário:
+
+Inserir o arquivo sales.csv
+Configurar a chave OpenRouter
+Instalar as dependências
+Executar a aplicação Streamlit
 Autor
 Projeto desenvolvido para fins de estudo, prática de análise de dados e desenvolvimento de assistentes inteligentes utilizando IA Generativa.
