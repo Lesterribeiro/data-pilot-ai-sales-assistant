@@ -1,6 +1,6 @@
 # Data Pilot AI Sales Assistant 
 
-O **Data Pilot AI Sales Assistant** é um painel inteligente de análise de vendas construído em Python com Streamlit. Ele integra técnicas de análise de dados com Inteligência Artificial por meio do OpenRouter utilizando **Function Calling**, permitindo consultas dinâmicas tanto visualmente quanto em linguagem natural. 
+O **Data Pilot AI Sales Assistant** é um painel inteligente de análise de vendas construído em Python com Streamlit. Ele integra técnicas de análise de dados com Inteligência Artificial por meio do OpenRouter utilizando **Function Calling**, permitindo consultas dinâmicas tanto visualmente quanto em linguagem natural.
 
 A regra fundamental do projeto: **O Python calcula os dados com precisão e a IA apenas explica o resultado**, evitando qualquer tipo de alucinação numérica.
 
@@ -58,24 +58,15 @@ O modelo de linguagem está instruído para identificar a intenção do usuário
 - `average_ticket`: Calcula o valor médio gasto por pedido.
 - `unique_customers`: Apresenta o número de compradores únicos na base de dados.
 - `cancellation_rate`: Calcula a taxa percentual de pedidos cancelados.
-- **`get_revenue_per_customer` (Melhoria Implementada):** Retorna o valor médio faturado por cliente único.
+- **`revenue_per_customer` (Melhoria Implementada):** Retorna o valor médio faturado por cliente único.
+- **`get_revenue_by_period` (Melhoria Implementada):** Retorna a receita total calculada de forma dinâmica por intervalo de datas.
 
 ---
 
 ## Melhorias Implementadas
 
-1. **Métrica de Negócio Nova:** Criação da função `get_revenue_per_customer` para acompanhar o real valor de ciclo de vida/gasto médio do cliente único na plataforma.
-2. **Filtros Temporais por Chat:** Capacidade do agente receber comandos com parâmetros implícitos de datas e intervalos temporais.
-
----
-
-## Evidências de Funcionamento
-
-### Painel de Controle (Dashboard)
-![Dashboard do Sistema](assets/dashboard.png)
-
-### Conversa com o Assistente (IA respondendo métricas reais)
-![Chat com IA](assets/chat.png)
+1. **Métrica de Negócio Nova:** Criação da função `revenue_per_customer` para acompanhar o real valor de ciclo de vida e gasto médio do cliente único na plataforma comercial.
+2. **Filtros Temporais por Chat:** Criação da lógica `get_revenue_by_period` garantindo a capacidade do agente de receber comandos analíticos com parâmetros implícitos de datas.
 
 ---
 Desenvolvido por [Lesterribeiro](https://github.com) para fins de estudo e portfólio em IA Generativa e Análise de Dados.
